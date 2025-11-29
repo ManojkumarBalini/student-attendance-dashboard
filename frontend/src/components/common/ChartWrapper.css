@@ -1,0 +1,36 @@
+.chart-wrapper {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.chart-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.chart-content {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .chart-wrapper {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .chart-content {
+        height: 300px;
+    }
+    
+    .chart-title {
+        font-size: 1.3rem;
+    }
+}

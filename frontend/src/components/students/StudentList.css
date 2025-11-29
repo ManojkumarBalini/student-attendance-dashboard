@@ -1,0 +1,126 @@
+.student-list {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.student-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid #3498db;
+}
+
+.student-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.student-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.student-details {
+    flex: 1;
+}
+
+.student-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 4px;
+}
+
+.student-class {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.empty-state-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.empty-state h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    opacity: 0.8;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .student-item {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .student-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .student-details {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .student-item {
+        margin: 0 10px;
+    }
+    
+    .student-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .student-name {
+        font-size: 1.1rem;
+    }
+    
+    .empty-state {
+        padding: 40px 20px;
+        margin: 0 10px;
+    }
+    
+    .empty-state-icon {
+        font-size: 3rem;
+    }
+}
